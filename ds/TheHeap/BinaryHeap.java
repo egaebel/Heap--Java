@@ -110,8 +110,7 @@ public class BinaryHeap<T extends Comparable<T>> implements HeapInterface<T> {
         
         int hole = size + 1;
         
-        //I think array[0] = element is here because I have to have 
-            //SOMETHING to compare to when I get to the top of the heap!!!
+        //I have array[0] = element because I have to have SOMETHING to compare to when I get to the top of the heap
         for(array[0] = element; heuristic.heuristic(element, array[hole / 2]) < 0; hole /= 2) {
             
             array[hole] = array[hole / 2];
